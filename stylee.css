@@ -1,0 +1,125 @@
+*{
+    padding:0;
+    margin:0;
+    
+}
+
+
+#game{
+    background: url(56.jpg);
+    width: 700px;
+    height: 400px;
+    background-size: cover;
+    position:relative;
+    /*border: 2px solid black;*/
+    margin: 5rem auto;
+    box-shadow: 1px 2px 60px rgba(0,0,0,4);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+    
+}
+#character{
+    
+    /*width: 20px;
+    height:50px;
+    background-image: url(8.png);
+    left: 20px;
+    background-color: red;
+    position: relative;
+    display:block;
+    top: 300px;*/
+
+    position: relative;
+    
+    top:220px;
+    left: 50px;
+    
+ 
+    
+}
+.animate{
+    animation: jump 500ms;
+}
+@keyframes jump{
+    0%{
+        top: 150px;
+    }
+    50%{
+        top: 100px;
+    }
+    70%{
+        top: 100px;
+    }
+    100%{
+        top: 150px;
+    }
+}
+#block{
+    /*width: 20px;
+    height: 20px;
+   background-color: greenyellow;
+    position: relative;
+    right: 0%;
+    top: 280px;
+    animation: block 2s infinite linear;*/
+    position: relative;
+    
+    top: 150px;
+    right: 0%;
+    animation: block 2s infinite linear;
+    
+}
+@keyframes block{
+    0%{
+       left: 700px;
+    }
+    100%{
+    left: -100px;
+    }
+    
+}
+#road{
+    height: 140px;
+    width: 500%;
+    background: url(Img_02.png);
+    display: block;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    box-shadow: white;
+
+    animation: road 2s linear infinite;
+    
+                
+}
+    
+
+@keyframes road{
+    100%{
+        transform: translateX(-1000px);
+    }
+}
+
+#score{
+    position: absolute;
+    top:20px;
+    left: 500px;
+    z-index: 100;
+    font: algerian;
+    font-size: 20px;
+    color: white;
+}
+/*#border{
+    position:absolute;
+    display: block;
+    bottom: 40px;
+    height: 0.1px;
+    width:500%;
+    background-color: silver;
+    border: 2px dashed white;
+   
+    
+   
+}*/
+
